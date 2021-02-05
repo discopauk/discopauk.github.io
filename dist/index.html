@@ -283,23 +283,31 @@
   </div>
 </section>
 <section class="request">
-  <button class="close">
-    <span></span>
-  </button>
+  <div class="close"> 	
+    &#215;
+  </div>
   <div class="request__block">
     <h2>Рассчитайте стоимость вашего дизайн-проекта</h2>
-    <fieldset>
+    <fieldset class="field">
       <legend>1. Укажите тип помещения</legend>
       <div class="radio"><input type="radio" name="type" id="flat" checked><label for="flat">Квартира</label></div>
       <div class="radio"><input type="radio" name="type" id="house"><label for="house">Частный дом</label></div>
       <div class="radio"><input type="radio" name="type" id="office"><label for="office">Офис</label></div>
-      <div class="subtitle">*Мы не передаем ваши персональные данные третьим лицам<br>
-        **Подавая заявку, вы принимаете условия нашей <a href="#">политики конфиденциальности</a></div>
     </fieldset>
-    <div class="request__bottom">
-      <div class="step">Шаг 1 из 3</div>
-      <button>Продолжить <svg width="36" height="17" viewBox="0 0 36 19.7"><use href="#right-arrow"/></svg></button>
-    </div>
+    <fieldset class="field">
+      <legend>2. Укажите площадь помещений дизайн-проекта, м<sup>2</sup></legend>
+      <input type="text" placeholder="Площадь помещения, м2">
+    </fieldset>
+    <fieldset class="field">
+      <legend>3. Ваши данные</legend>
+      <input type="text" placeholder="Ваше имя">
+      <input type="email" placeholder="Ваш e-mail">
+      <button>Рассчитать стоимость <svg width="36" height="17" viewBox="0 0 36 19.7"><use href="#right-arrow"/></svg></button>
+    </fieldset>
+      <div class="subtitle">*Мы не передаем ваши персональные данные третьим лицам<br>
+      **Подавая заявку, вы принимаете условия нашей <a href="#">политики конфиденциальности</a></div>
+      <span class="step">Шаг 1 из 3</span>
+      <button class="next">Вперед <svg width="36" height="17" viewBox="0 0 36 19.7"><use href="#right-arrow"/></svg></button>
   </div>
 </section>
 <div class="fade"></div>

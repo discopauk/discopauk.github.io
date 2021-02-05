@@ -578,7 +578,7 @@ aside > div {
   top: 10%;
   left: 25%;
   width: 50vw;
-  min-height: 50vh;
+  height: 70vh;
   transform: translateX(100vw);
   background-color: #fff;
   z-index: 999;
@@ -587,18 +587,27 @@ aside > div {
 .request__block {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   padding: 60px 70px;
 }
 .request__block .subtitle {
   margin-top: 20px;
 }
-.request__bottom {
-
+.request__block button {
+  align-self: end;
+}
+.step {
+  position: relative;
+  top: 50px;
+  display: inline-block;
+  font-size: 1.27rem;
+  font-weight: 700;
+  align-self: start;
+  text-transform: uppercase;
 }
 .radio {
-  padding: 12px 14px;
+  padding: 18px 14px;
   border: 1px solid #707070;
 }
 .radio + .radio {
@@ -606,24 +615,11 @@ aside > div {
 }
 .close {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 1rem;
+  right: 3rem;
+  font-size: 3rem;
   z-index: 999;
-}
-.close span::before,
-.close span::after {
-  content: "";
-  display: block;
-  background-color: #000;
-  width: 20px;
-  height: 2px;
-  transform-origin: center;
-}
-.close span::before {
-  transform: rotate(-45deg);
-}
-.close span::after {
-  transform: rotate(45deg);
+  cursor: pointer;
 }
 .openModal {
   overflow: hidden;
@@ -634,4 +630,12 @@ aside > div {
 }
 .openModal .fade {
   opacity: 0.8;
+}
+.field {
+}
+.field:nth-of-type(2) {
+  display: none;
+}
+.field:nth-of-type(3) {
+  display: none;
 }
