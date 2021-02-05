@@ -1,5 +1,3 @@
-
-"use strict"
 const toggle = document.querySelector(".toggle");
 const body = document.querySelector("body");
 const calc = document.querySelector(".calc");

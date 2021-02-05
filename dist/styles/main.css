@@ -662,8 +662,6 @@ aside > div {
 .openModal .fade {
   opacity: 0.8;
 }
-.field {
-}
 .field:nth-of-type(2) {
   display: none;
 }
