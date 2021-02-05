@@ -37,6 +37,10 @@ button {
   font-weight: 800;
   cursor: pointer;
 }
+button:disabled {
+  background-color: #707070;
+  cursor: not-allowed;
+}
 button svg {
   transform: translateY(3px);
 }
@@ -265,6 +269,7 @@ section:not(.contact, .consult) {
   border-bottom: 4px solid #ec8211;
 }
 .subtitle {
+  margin-top: 15px;
   margin-left: auto;
 }
 .subtitle a {
@@ -578,32 +583,58 @@ aside > div {
   top: 10%;
   left: 25%;
   width: 50vw;
-  height: 70vh;
-  transform: translateX(100vw);
-  background-color: #fff;
-  z-index: 999;
-  transition: 0.8s cubic-bezier(0.36, 0.33, 0, 1);
-}
-.request__block {
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
   padding: 60px 70px;
+  transform: translateX(100vw);
+  background-color: #fff;
+  z-index: 999;
+  transition: 0.8s cubic-bezier(0.36, 0.33, 0, 1);
 }
-.request__block .subtitle {
-  margin-top: 20px;
+.request h2 {
+  position: absolute;
+  top: 10%;
 }
-.request__block button {
-  align-self: end;
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.field__item {
+  width: 100%;
+}
+.field__item input {
+  width: 100%;
+}
+.field .radio{
+  width: 100%;
+}
+.request .subtitle {
+  position: absolute;
+  bottom: 20%;
+}
+.request .next {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+.request .prev {
+  position: absolute;
+  bottom: 10%;
+  right: 40%;
+}
+.left-arr {
+  transform: rotate(180deg);
 }
 .step {
-  position: relative;
-  top: 50px;
-  display: inline-block;
+  position: absolute;
+  bottom: 10%;
   font-size: 1.27rem;
   font-weight: 700;
-  align-self: start;
   text-transform: uppercase;
 }
 .radio {
