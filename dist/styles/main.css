@@ -128,14 +128,11 @@ header .wrap {
   padding: 15px 0px;
 }
 main {
-  padding-left: 100px;
+  padding-left: 7vw;
 }
 section {
   display: flex;
   align-items: center;
-}
-section:not(.contact, .consult) {
-  min-height: 70vh;
 }
 .wrap {
   width: 100%;
@@ -610,6 +607,9 @@ aside > div {
 .field__item input {
   width: 100%;
 }
+.field__item + .field__item {
+  margin-top: 10px;
+}
 .field .radio{
   width: 100%;
 }
@@ -667,4 +667,69 @@ aside > div {
 }
 .field:nth-of-type(3) {
   display: none;
+}
+.field {
+  display: none;
+}
+@media (max-width: 964px) {
+  .main-menu__list {
+    display: none;
+  }
+  .hero, .contact, .consult {
+    background-attachment: scroll;
+    background-size: cover;
+  }
+  .block {
+    flex: 0 0 33.333%;
+  }
+  .star {
+    flex: 0 0 100%;
+  }
+  .card-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    margin-bottom: 15px;
+  }
+  .container {
+    width: 100%;
+    padding: 3% 10%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  section {
+    min-height: 70vh;
+  }
+  .trust .block {
+    flex: 0 0 100%;
+  }
+  .request {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .wrap {
+    padding: 2vh 5vw;
+  }
+  .submenu {
+    display: none;
+  }
+}
+@media (max-width: 960px) {
+  section {
+    min-height: 100vh;
+  }
+}
+@media (min-width: 960px) {
+  section {
+    min-height: 70vh;
+  }
 }
