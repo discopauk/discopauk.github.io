@@ -239,7 +239,7 @@ section {
 .hero {
   height: 72vh;
   margin-top: 75px;
-  background-image: url("../../public/hero.jpg");
+  background-image: url("/public/hero.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: contain;
@@ -332,22 +332,22 @@ section {
   margin-top: 30px;
 }
 .card:nth-child(1) {
-  background-image: url("../../public/portfolio1.jpg");
+  background-image: url("/public/portfolio1.jpg");
 }
 .card:nth-child(2) {
-  background-image: url("../../public/portfolio2.jpg");
+  background-image: url("/public/portfolio2.jpg");
 }
 .card:nth-child(3) {
-  background-image: url("../../public/portfolio3.jpg");
+  background-image: url("/public/portfolio3.jpg");
 }
 .card:nth-child(4) {
-  background-image: url("../../public/portfolio4.jpg");
+  background-image: url("/public/portfolio4.jpg");
 }
 .card:nth-child(5) {
-  background-image: url("../../public/portfolio5.jpg");
+  background-image: url("/public/portfolio5.jpg");
 }
 .card:nth-child(6) {
-  background-image: url("../../public/portfolio6.jpg");
+  background-image: url("/public/portfolio6.jpg");
 }
 .card__title {
   width: max-content;
@@ -464,16 +464,16 @@ section {
   margin-bottom: 10%;
 }
 .contact {
-  background-image: url("../../public/contact1.jpg");
+  background-image: url("/public/contact1.jpg");
 }
 .consult {
-  background-image: url("../../public/contact2.jpg");
+  background-image: url("/public/contact2.jpg");
 }
 footer {
   padding-top: 45px;
   padding-bottom: 45px;
   color: #fff;
-  background-image: url("../../public/footer.jpg");
+  background-image: url("/public/footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
