@@ -602,6 +602,59 @@ aside > *:hover {
 .openModal .fade {
   opacity: 0.8;
 }
+@media (max-width: 480px) {
+  header .logo {
+    display: none;
+  }
+  .hero {
+    padding: 0;
+  }
+  .container {
+    padding: 5vh 5vw;
+  }
+  .block {
+    flex: 0 0 70%;
+  }
+  .star {
+    flex: 0 0 70%;
+  }
+}
+@media (max-width: 790px) {
+  .card-list {
+    grid-template-columns: 1fr;
+  }
+  .portfolio {
+    padding-bottom: 50vh;
+  }
+  .trust .block {
+    flex: 0 0 100%;
+  }
+  .container {
+    margin-right: 0;
+  }
+  .text {
+    padding-right: 0;
+  }
+  .rules {
+    display: none;
+  }
+}
+@media (max-width: 960px) {
+  section {
+    min-height: 100vh;
+  }
+  .main-menu__list {
+    display: none;
+  }   
+  .hero, .contact, .consult {
+    background-position: center;
+  }
+}
+@media (min-width: 961px) {
+  section {
+    min-height: 70vh;
+  }
+}
 @media (max-width: 1000px) {
   .request {
     top: 0;
@@ -627,58 +680,5 @@ aside > *:hover {
   }
   .payment {
     margin: 0 0 0 65vw;
-  }
-}
-@media (max-width: 960px) {
-  section {
-    min-height: 100vh;
-  }
-  .main-menu__list {
-    display: none;
-  }   
-  .hero, .contact, .consult {
-    background-position: center;
-  }
-}
-@media (max-width: 790px) {
-  .card-list {
-    grid-template-columns: 1fr;
-  }
-  .portfolio {
-    padding-bottom: 50vh;
-  }
-  .trust .block {
-    flex: 0 0 100%;
-  }
-  .container {
-    margin-right: 0;
-  }
-  .text {
-    padding-right: 0;
-  }
-  .rules {
-    display: none;
-  }
-}
-@media (max-width: 480px) {
-  header .logo {
-    display: none;
-  }
-  .hero {
-    padding: 0;
-  }
-  .container {
-    padding: 5vh 5vw;
-  }
-  .block {
-    flex: 0 0 70%;
-  }
-  .star {
-    flex: 0 0 70%;
-  }
-}
-@media (min-width: 964px) {
-  section {
-    min-height: 70vh;
   }
 }
